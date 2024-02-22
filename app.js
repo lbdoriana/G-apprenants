@@ -2,7 +2,7 @@ const bodyparser = require('body-parser');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = 3000;
+const port = 3306;
 const mysql = require('mysql');
 
 const swaggerUi = require('swagger-ui-express');
