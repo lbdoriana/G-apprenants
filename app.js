@@ -18,10 +18,11 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(cors());
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "hackathon"
+  Server: "mysql-basededonnee.alwaysdata.net",
+  user: "349032_root",
+  password: "#CEb3JXC9dwAC7K",
+  Database: "basededonnee_test"
+
 });
 
 connection.connect((error) => {
