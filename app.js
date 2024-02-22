@@ -29,7 +29,7 @@ connection.connect((error) => {
   if (error) {
     console.error('Erreur de connexion à la base de données:', error);
   } else {
-    console.log('Connexion à la base de données établie');
+    console.log('Connexion à la base de données établie avec succes');
   }
 });
 
