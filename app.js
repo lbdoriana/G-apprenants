@@ -2,7 +2,7 @@ const bodyparser = require('body-parser');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-// const port = 3306;
+const port = 3306;
 const mysql = require('mysql');
 
 const swaggerUi = require('swagger-ui-express');
@@ -18,10 +18,10 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(cors());
 
 const connection = mysql.createConnection({
-  Server: "mysql-basededonnee.alwaysdata.net",
+  host: "mysql-basededonnee.alwaysdata.net",
   user: "349032_root",
   password: "#CEb3JXC9dwAC7K",
-  Database: "basededonnee_test"
+  database: "basededonnee_test"
 
 });
 
